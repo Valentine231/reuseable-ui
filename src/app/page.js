@@ -19,6 +19,11 @@ import HoverCard from "./components/Hover";
 import GitHubprofile from "../githubprofile/pages";
 import ToastNotification from "@/toastnotification/pages";
 import SplitLanding from "./components/spiltlandingpage";
+import DrawingApp from "./components/drawing";
+import FeedbackCard from "./components/feedbackui";
+import FAQ from "./components/faqcollapse";
+import MobileNav from "./components/mobilenavigation";
+import Navbar from "./components/mobilenavigation";
 
 
 
@@ -76,7 +81,16 @@ export default function Home() {
 {/* <GitHubprofile /> */}
 
 {/* <ToastNotification /> */}
-<SplitLanding />
+{/* <SplitLanding /> */}
+
+{/* <DrawingApp /> */}
+
+{/* <FeedbackCard /> */}
+
+{/* <FAQ /> */}
+
+{/* <MobileNav /> */}  
+<Navbar />
 
 
 
