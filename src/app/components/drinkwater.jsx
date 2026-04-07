@@ -6,15 +6,31 @@ import { motion } from "framer-motion";
 export default function WaterApp() {
   const goal = 2000;
   const [water, setWater] = useState(0);
+  const [message, setMessage] = useState("");
 
   const percent = Math.min((water / goal) * 100, 100);
   const isFull = water >= goal;
 
   const addWater = (amount) => {
-    setWater((prev) => Math.min(prev + amount, goal));
-  };
+  setWater((prev) => {
+    const newValue = Math.min(prev + amount, goal);
 
-  const reset = () => setWater(0);
+    if (newValue < 1000) {
+      setMessage("You need more water 💧");
+    } else if (newValue < 1500) {
+      setMessage("Halfway there! Keep going! 🚰");
+    } else if (newValue < goal) {
+      setMessage("Almost there! Just a bit more! 🥤");
+    } else {
+      setMessage("GOOD JOB!! CHAMP");
+    }
+    return newValue;
+  });
+};
+  const reset = ()=>{
+    setWater(0);
+    setMessage('')
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300">
@@ -78,6 +94,16 @@ export default function WaterApp() {
             className="text-green-600 font-semibold"
           >
             🎉 Goal Reached!
+          </motion.p>
+        )}
+
+       {message && (
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-blue-600 font-semibold"
+          >
+            {message}
           </motion.p>
         )}
 

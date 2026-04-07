@@ -24,6 +24,13 @@ import FeedbackCard from "./components/feedbackui";
 import FAQ from "./components/faqcollapse";
 import MobileNav from "./components/mobilenavigation";
 import Navbar from "./components/mobilenavigation";
+import Quiz from "./components/quizapp";
+import StickyNavbar from "./components/stickynav";
+import Navi from "@/stickynav/pages";
+import Scrolltest from "@/scroll/pages";
+import Soundboard from "@/soundboard/pages";
+import ClockTime from "@/clocktheme/pages";
+import VerifyAccount from "@/verfyingui/pages";
 
 
 
@@ -90,7 +97,21 @@ export default function Home() {
 {/* <FAQ /> */}
 
 {/* <MobileNav /> */}  
-<Navbar />
+{/* <Navbar /> */}
+
+ {/* <Quiz /> */}
+
+ {/* <StickyNavbar /> */}
+
+ {/* <Navi /> */}
+
+ {/* <Scrolltest /> */}
+
+ {/* <Soundboard /> */}
+
+ {/* <ClockTime /> */}
+
+ <VerifyAccount />
 
 
 
