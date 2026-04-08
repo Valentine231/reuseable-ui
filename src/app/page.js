@@ -31,6 +31,8 @@ import Scrolltest from "@/scroll/pages";
 import Soundboard from "@/soundboard/pages";
 import ClockTime from "@/clocktheme/pages";
 import VerifyAccount from "@/verfyingui/pages";
+import NetflixMobileNav from "./components/netflixmobilenav";
+import Todo from "./components/todolist";
 
 
 
@@ -111,7 +113,11 @@ export default function Home() {
 
  {/* <ClockTime /> */}
 
- <VerifyAccount />
+ {/* <VerifyAccount /> */}
+
+ {/* <NetflixMobileNav /> */}
+
+ <Todo />
 
 
 
