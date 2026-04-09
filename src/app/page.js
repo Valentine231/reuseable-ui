@@ -33,6 +33,7 @@ import ClockTime from "@/clocktheme/pages";
 import VerifyAccount from "@/verfyingui/pages";
 import NetflixMobileNav from "./components/netflixmobilenav";
 import Todo from "./components/todolist";
+import Movieapp from "@/movieapp/pages";
 
 
 
@@ -117,7 +118,9 @@ export default function Home() {
 
  {/* <NetflixMobileNav /> */}
 
- <Todo />
+ {/* <Todo /> */}
+
+ <Movieapp />
 
 
 
