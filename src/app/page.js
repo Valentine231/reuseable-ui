@@ -34,6 +34,10 @@ import VerifyAccount from "@/verfyingui/pages";
 import NetflixMobileNav from "./components/netflixmobilenav";
 import Todo from "./components/todolist";
 import Movieapp from "@/movieapp/pages";
+import LiveUserFilter from "./components/liveuserfilter";
+import NoteApp from "./components/noteapp";
+import RandomImage from "./components/randomimage";
+import RandomPicker from "./components/randomchociepicker";
 
 
 
@@ -120,7 +124,15 @@ export default function Home() {
 
  {/* <Todo /> */}
 
- <Movieapp />
+ {/* <Movieapp /> */}
+
+ {/* <LiveUserFilter /> */}
+
+ {/* <NoteApp /> */}
+
+ {/* <RandomImage /> */}
+
+ <RandomPicker />
 
 
 
