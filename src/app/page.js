@@ -38,6 +38,19 @@ import LiveUserFilter from "./components/liveuserfilter";
 import NoteApp from "./components/noteapp";
 import RandomImage from "./components/randomimage";
 import RandomPicker from "./components/randomchociepicker";
+import TestimonialSwitcher from "./components/testimonialswitcher";
+import GameBoard from "./components/gameboard";
+import PasswordStrength from "./components/passwordstrengthenbackground";
+import ProgressSteps from "./components/progresssteps";
+import ThreeDBox from "./components/3dboxes";
+import JokeCard from "./components/jokecard";
+import DoubleClickHeart from "./components/doubleclickhear";
+import DoubleVerticalSlider from "./components/double-veritical-slider";
+import KeyCode from "./components/eventkeycodes";
+import Counter from "./components/counter";
+import HiddenSearch from "./components/hiddensearch";
+import GoodCheapFast from "./components/goodcheapfast";
+import RotatingNav from "./components/rotatingnav";
 
 
 
@@ -132,7 +145,37 @@ export default function Home() {
 
  {/* <RandomImage /> */}
 
- <RandomPicker />
+ {/* <RandomPicker /> */}
+
+ {/* <TestimonialSwitcher /> */}
+
+ {/* <GameBoard /> */}
+
+ {/* <PasswordStrength /> */}
+
+ {/* <ProgressSteps /> */}
+
+ {/* <ThreeDBox /> */}
+
+ {/* <JokeCard /> */}
+
+  {/* <DoubleClickHeart>
+      <div className="w-80 h-80 mx-auto my-30 bg-gray-700 font-bold font-sans flex items-center justify-center rounded-xl">
+        Double click me 😄
+      </div>
+    </DoubleClickHeart> */}
+
+    {/* <DoubleVerticalSlider /> */}
+
+    {/* <KeyCode /> */}
+
+    {/* <Counter /> */}
+
+    {/* <HiddenSearch /> */}
+
+    {/* <GoodCheapFast /> */}
+
+    <RotatingNav />
 
 
 

@@ -38,8 +38,24 @@ export default function LiveUserFilter() {
         className="p-3 border-gray-50 bg-gray-700 rounded w-1/2 mb-4 text-black font-bold font-comicsans"
       />
 
+      {/* RESULTS */}
+      {Filter.length === 0 ? (
+        <p className="text-gray-500">No users found.</p>
+      ) : (
+        <ul className="space-y-2">
+          {Filter.map((user) => (
+            <li key={user.id} className="p-2 bg-gray-200 rounded text-2xl font-bold font-comicsans text-blue-800">
+              {user.name}
+              <br />
+              <span className="text-lg font-normal text-gray-600"> age:({user.age})</span>
+             
+            </li>
+          ))}
+        </ul>
+      )}
+
       {/* LIST */}
-      <ul className="space-y-2">
+      {/* <ul className="space-y-2">
         {Filter.map((user) => (
           <li key={user.id} className="p-2 bg-gray-200 rounded text-2xl font-bold font-comicsans text-blue-800">
             {user.name}
@@ -48,7 +64,7 @@ export default function LiveUserFilter() {
            
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
     )
 }
