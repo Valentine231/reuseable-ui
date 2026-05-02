@@ -23,15 +23,19 @@ const Timebox = ({label, value}) => (
 )
 
 export const AnimatedCountdown = ({targetDate}) => {
+    const defaultDate = new Date();
+    defaultDate.setMonth(defaultDate.getMonth() + 4);
+    const finalTargetDate = targetDate || defaultDate;
+
     const calculateTimeLeft = () => {
-        const difference = new Date(targetDate) - new Date();
+        const difference = new Date(finalTargetDate) - new Date();
         let timeLeft = {};
 
         if(difference > 0) {
             timeLeft = {
                 days: Math.floor(difference /(1000 * 60 * 60 * 24)),
                 hours: Math.floor((difference/(1000 * 60 * 60))%24),
-                minutes:Math.floor(difference /( 1000 * 60)%60),
+                minutes:Math.floor((difference /( 1000 * 60))%60),
                 seconds:Math.floor((difference/1000)%60)
             }
         }
@@ -46,7 +50,7 @@ export const AnimatedCountdown = ({targetDate}) => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [targetDate]);
+    }, [finalTargetDate]);
         
 
 

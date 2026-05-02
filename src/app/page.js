@@ -23,10 +23,13 @@ export default function Home() {
       <nav className="border-b border-white/5 bg-white/5 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="bg-indigo-500 p-2 rounded-xl text-white">
+            <div className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 p-2 rounded-xl text-white shadow-lg shadow-indigo-500/20">
               <Sparkles size={20} />
             </div>
-            <span className="text-xl font-bold tracking-tight text-white">ZenStore<span className="text-indigo-400"> UI</span></span>
+            <span className="text-xl font-bold tracking-tight text-white flex items-center">
+              50Component
+              <span className="ml-1.5 px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-400 text-[0.65rem] border border-indigo-500/20 uppercase tracking-widest font-black">UI</span>
+            </span>
           </div>
           <div className="relative w-64 md:w-96 hidden sm:block">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { BlurryLoader } from "../components/blurryloader";
 
-export const Loader = () => {
+export default function Loader() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
