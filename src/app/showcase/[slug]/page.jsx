@@ -35,7 +35,7 @@ export default function ShowcasePage({ params }) {
             <p className="text-sm">Mounting {compData.title}...</p>
           </div>
         }>
-          <div className="w-full max-w-full overflow-hidden flex flex-col items-center justify-center min-h-[300px]">
+          <div className="w-full max-w-full flex flex-col items-center justify-start min-h-[300px] pt-16">
             <DynamicComponent />
           </div>
         </React.Suspense>

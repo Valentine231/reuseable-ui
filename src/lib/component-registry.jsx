@@ -86,7 +86,8 @@ export const componentRegistry = [
   { slug: "key-codes", title: "Event KeyCodes", description: "Show details of the pressed keyboard key", icon: getIcon('Hash'), component: safeDynamic(import("@/app/components/eventkeycodes"), "KeyCode") },
   { slug: "hidden-search", title: "Hidden Search", description: "Expandable search input widget", icon: getIcon('Search'), component: safeDynamic(import("@/app/components/hiddensearch"), "HiddenSearch") },
   { slug: "good-cheap-fast", title: "Good Cheap Fast", description: "Funny toggle switch logic demo", icon: getIcon('Zap'), component: safeDynamic(import("@/app/components/goodcheapfast"), "GoodCheapFast") },
-  { slug: "rotating-nav", title: "Rotating Nav Info", description: "Transforming layout rotating into view", icon: getIcon('RotateCw'), component: safeDynamic(import("@/app/components/rotatingnav"), "RotatingNav") }
+  { slug: "rotating-nav", title: "Rotating Nav Info", description: "Transforming layout rotating into view", icon: getIcon('RotateCw'), component: safeDynamic(import("@/app/components/rotatingnav"), "RotatingNav") },
+  { slug: "pokemon-memory", title: "Pokemon Memory Game", description: "Interactive memory card game using PokeAPI", icon: getIcon('Gamepad2'), component: safeDynamic(import("@/app/components/gameboard"), "GameBoard") }
 ];
 
 export const getComponentBySlug = (slug) => {

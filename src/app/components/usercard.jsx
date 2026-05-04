@@ -6,7 +6,7 @@ export default function UserCard({ user }) {
   return (
     <motion.div
       className="bg-gray-800 p-6 rounded-xl text-white flex gap-6 mt-6"
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 1, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
     >
       <img

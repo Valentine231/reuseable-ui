@@ -17,7 +17,7 @@ export default function SearchForm({ onSearch }) {
     <motion.form
       onSubmit={handleSubmit}
       className="flex gap-2"
-      initial={{ y: -20, opacity: 0 }}
+      initial={{ y: -20, opacity: 1 }}
       animate={{ y: 0, opacity: 1 }}
     >
       <input

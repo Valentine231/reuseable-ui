@@ -11,7 +11,7 @@ export default function RepoList({ repos }) {
           href={repo.html_url}
           target="_blank"
           className="bg-blue-600 px-3 py-1 rounded text-sm"
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 1, scale: 1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: i * 0.1 }}
         >

@@ -37,7 +37,7 @@ export default function GitHubprofile() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col items-center p-6">
+    <div className="flex flex-col items-center py-8">
       <SearchForm onSearch={fetchUser} />
 
       {error && <ErrorCard message={error} />}
